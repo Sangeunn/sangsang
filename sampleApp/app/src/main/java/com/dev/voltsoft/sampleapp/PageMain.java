@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import com.dev.voltsoft.lib.view.CircleImageView;
 import com.dev.voltsoft.lib.view.menudrawer.MenuDrawer;
 import com.dev.voltsoft.lib.view.menudrawer.Position;
 
@@ -32,5 +33,8 @@ public class PageMain extends AppCompatActivity
                 mMenuDrawer.openMenu();
             }
         });
+
+        CircleImageView circleImageView = findViewById(R.id.profileImage);
+        circleImageView.loadImage("https://i.pinimg.com/originals/40/ae/cd/40aecd3a61715fb9ba210158a66e0efd.jpg");
     }
 }

@@ -2,8 +2,197 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/main_registerPageBack">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_registerPageBack"
+    android:orientation="vertical">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp25"
+                android:layout_marginTop="@dimen/dp35"
+                android:orientation="vertical">
+
+                <com.dev.voltsoft.lib.view.CircleImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="@dimen/dp150"
+                    android:layout_height="@dimen/dp150"/>
+
+                <TextView
+                    android:id="@+id/profileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="닉네임"
+                    android:textColor="@color/color_white"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dp25"
+                android:paddingLeft="@dimen/dp15"
+                android:paddingRight="@dimen/dp15"
+                android:background="@color/color_8014d3cf">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp150"
+                    android:orientation="horizontal">
+
+                    <com.dev.voltsoft.lib.view.MaterialDesignButton
+                        android:id="@+id/sideBarButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/dp15"
+                        app:connerRoundRadius="@dimen/dp15"
+                        android:text="수직리스트"
+                        android:textColor="@color/color_white"
+                        app:materialStrokeColor="@color/color_white"
+                        app:materialBackgroundColor="@color/color_3FD9D2"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp150"
+                    android:orientation="horizontal">
+
+                    <com.dev.voltsoft.lib.view.MaterialDesignButton
+                        android:id="@+id/sideBarButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/dp15"
+                        app:connerRoundRadius="@dimen/dp15"
+                        android:text="수평리스트"
+                        android:textColor="@color/color_white"
+                        app:materialStrokeColor="@color/color_white"
+                        app:materialBackgroundColor="@color/color_3FD9D2"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp150"
+                    android:orientation="horizontal">
+
+                    <com.dev.voltsoft.lib.view.MaterialDesignButton
+                        android:id="@+id/sideBarButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/dp15"
+                        app:connerRoundRadius="@dimen/dp15"
+                        android:text="그리드리스트"
+                        android:textColor="@color/color_white"
+                        app:materialStrokeColor="@color/color_white"
+                        app:materialBackgroundColor="@color/color_3FD9D2"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp150"
+                    android:orientation="horizontal">
+
+                    <com.dev.voltsoft.lib.view.MaterialDesignButton
+                        android:id="@+id/sideBarButton4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/dp15"
+                        app:connerRoundRadius="@dimen/dp15"
+                        android:text="비디오 페이지"
+                        android:textColor="@color/color_white"
+                        app:materialStrokeColor="@color/color_white"
+                        app:materialBackgroundColor="@color/color_3FD9D2"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp150"
+                    android:orientation="horizontal">
+
+                    <com.dev.voltsoft.lib.view.MaterialDesignButton
+                        android:id="@+id/sideBarButton5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/dp15"
+                        app:connerRoundRadius="@dimen/dp15"
+                        android:text="다이어리 쓰기"
+                        android:textColor="@color/color_white"
+                        app:materialStrokeColor="@color/color_white"
+                        app:materialBackgroundColor="@color/color_3FD9D2"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp150"
+                    android:orientation="horizontal">
+
+                    <com.dev.voltsoft.lib.view.MaterialDesignButton
+                        android:id="@+id/sideBarButton6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/dp15"
+                        app:connerRoundRadius="@dimen/dp15"
+                        android:text="다이어리 리스트"
+                        android:textColor="@color/color_white"
+                        app:materialStrokeColor="@color/color_white"
+                        app:materialBackgroundColor="@color/color_3FD9D2"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_white"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp150"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </FrameLayout>
