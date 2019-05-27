@@ -19,21 +19,25 @@
             android:textSize="20dp" />
 
         <com.dev.voltsoft.lib.view.insert.InsertForm
+            android:id="@+id/insertFormId"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             app:title="아이디"/>
 
         <com.dev.voltsoft.lib.view.insert.InsertForm
+            android:id="@+id/insertFormNickName"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             app:title="닉네임"/>
 
         <com.dev.voltsoft.lib.view.insert.InsertForm
+            android:id="@+id/insertFormPassword1"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp80"
             app:title="패스워드"/>
 
         <com.dev.voltsoft.lib.view.insert.InsertForm
+            android:id="@+id/insertFormPassword2"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             app:title="패스워드 확인"/>
@@ -48,6 +52,7 @@
         android:orientation="horizontal">
 
         <com.dev.voltsoft.lib.view.MaterialDesignButton
+            android:id="@+id/confirmButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
